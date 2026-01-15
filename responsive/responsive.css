@@ -1,0 +1,128 @@
+:root {
+    --bg-primary: #f3f4f6;
+    --text-primary: #1f2937;
+    --accent: #6366f1;
+    --header-bg: #ffffff;
+    --border: #e5e7eb;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-primary);
+    font-family: 'Inter', sans-serif;
+    color: var(--text-primary);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1400px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.25rem;
+    white-space: nowrap;
+}
+h1 span { color: var(--accent); }
+
+.url-bar {
+    flex: 1;
+    background-color: #f9fafb;
+    border: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    border-radius: 99px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #4b5563;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#rotate-btn {
+    background-color: white;
+    border: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 500;
+}
+#rotate-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+main {
+    flex: 1;
+    overflow: auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.device-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.device-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.device-frame {
+    background-color: white;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 8px solid #1f2937; /* Bezel */
+    border-radius: 12px; /* Outer radius */
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+iframe {
+    border: none;
+    background-color: white;
+    display: block;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
