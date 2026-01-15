@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTools - Web Development Supercharged</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="noise-overlay"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-box">
+                <img src="assets/logo.png" alt="DevTools Logo">
+            </div>
+            <span>DevTools</span>
+        </div>
+        <div class="nav-right">
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="id">ID</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <a href="#install" class="btn-primary-sm">
+                <span class="lang-id">Pasang Sekarang</span>
+                <span class="lang-en">Install Now</span>
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content reveal">
+            <div class="badge-wrapper">
+                <span class="badge">
+                    <span class="lang-id">✨ Versi 1.0 Telah Hadir</span>
+                    <span class="lang-en">✨ Version 1.0 Is Here</span>
+                </span>
+            </div>
+            
+            <h1>
+                <span class="lang-id">Toolkit Wajib Para <br><span class="gradient-text">Developer Web</span></span>
+                <span class="lang-en">The Essential Toolkit for <br><span class="gradient-text">Web Developers</span></span>
+            </h1>
+            
+            <p class="hero-desc">
+                <span class="lang-id">Berhenti berpindah-pindah ekstensi. Dapatkan Inspector, Eyedropper, Screenshot, dan Responsive Tester dalam satu alat super ringan.</span>
+                <span class="lang-en">Stop switching between extensions. Get Inspector, Eyedropper, Screenshot, and Responsive Tester in one super lightweight tool.</span>
+            </p>
+            
+            <div class="cta-group">
+                <a href="#install" class="btn-primary">
+                    <span class="lang-id">Tambahkan ke Chrome</span>
+                    <span class="lang-en">Add to Chrome</span>
+                </a>
+                <a href="#features" class="btn-secondary">
+                    <span class="lang-id">Lihat Fitur</span>
+                    <span class="lang-en">View Features</span>
+                </a>
+            </div>
+
+            <div class="trusted-by">
+                <p>
+                    <span class="lang-id">Didesain untuk produktivitas maksimal</span>
+                    <span class="lang-en">Designed for maximum productivity</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="hero-visual reveal delay-200">
+            <div class="app-window float-animation">
+                <div class="title-bar">
+                    <div class="dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="url-bar">devtools://pro</div>
+                </div>
+                <div class="app-content">
+                    <div class="feature-grid-visual">
+                        <div class="v-card">
+                            <div class="v-icon">🔍</div>
+                            <div class="v-text">Inspector</div>
+                            <div class="v-val">Edit / Remove Element</div>
+                        </div>
+                        <div class="v-card">
+                            <div class="v-icon">🎨</div>
+                            <div class="v-text">Color Picker</div>
+                            <div class="v-val">#6366F1</div>
+                        </div>
+                        <div class="v-card">
+                            <div class="v-icon">📱</div>
+                            <div class="v-text">Responsive Tester</div>
+                            <div class="v-val">Many Device Options</div>
+                        </div>
+                        <div class="v-card highlight">
+                            <div class="v-icon">📸</div>
+                            <div class="v-text">Screenshot</div>
+                            <div class="v-val">Current / Full Page</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Floating Elements -->
+            <div class="float-badge f1">
+                <span>RGB</span> <b>255, 99, 71</b>
+            </div>
+            <div class="float-badge f2">
+                <span>Viewport</span> <b>1920x1080</b>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features section-padding">
+        <div class="section-header reveal">
+            <h2>
+                <span class="lang-id">Satu Ekstensi, <span class="gradient-text">Sejuta Fungsi</span></span>
+                <span class="lang-en">One Extension, <span class="gradient-text">Infinite Possibilities</span></span>
+            </h2>
+            <p>
+                <span class="lang-id">Kami menggabungkan fitur-fitur paling sering digunakan developer menjadi satu antarmuka yang elegan.</span>
+                <span class="lang-en">We combined the most used developer features into one elegant interface.</span>
+            </p>
+        </div>
+        
+        <div class="grid-features">
+            <div class="feature-box reveal delay-100">
+                <div class="f-icon clr-1">🔍</div>
+                <h3>Smart Inspector</h3>
+                <p>
+                    <span class="lang-id">Edit teks, hapus elemen pengganggu, dan debug CSS dengan satu klik. Mode kontinyu membuat inspeksi lebih cepat dari sebelumnya.</span>
+                    <span class="lang-en">Edit text, remove annoyance elements, and debug CSS in one click. Continuous mode makes inspection faster than ever.</span>
+                </p>
+            </div>
+            <div class="feature-box reveal delay-200">
+                <div class="f-icon clr-2">🎨</div>
+                <h3>Pro Eyedropper</h3>
+                <p>
+                    <span class="lang-id">Ambil warna dari pixel manapun. Format HEX, RGB, dan RGBA langsung tersalin. UI modern yang tidak menghalangi pandangan.</span>
+                    <span class="lang-en">Piick colors from any pixel. HEX, RGB, and RGBA formats copied instantly. Modern UI that doesn't block your view.</span>
+                </p>
+            </div>
+            <div class="feature-box reveal delay-300">
+                <div class="f-icon clr-3">📸</div>
+                <h3>Ultimate Screenshot</h3>
+                <p>
+                    <span class="lang-id">Screenshot full-page yang cerdas. Otomatis menyembunyikan "sticky header" yang mengganggu agar hasil tangkapan bersih sempurna.</span>
+                    <span class="lang-en">Smart full-page screenshot. Automatically hides annoying "sticky headers" for a perfectly clean capture.</span>
+                </p>
+            </div>
+            <div class="feature-box reveal delay-400">
+                <div class="f-icon clr-4">📱</div>
+                <h3>Responsive Lab</h3>
+                <p>
+                    <span class="lang-id">Uji tampilanmu di berbagai perangkat sekaligus. iPhone, iPad, Desktop - semua dalam satu tab baru.</span>
+                    <span class="lang-en">Test your view on multiple devices simultaneously. iPhone, iPad, Desktop - all in one new tab.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Tutorial -->
+    <section id="install" class="tutorial section-padding">
+        <div class="section-header reveal">
+            <h2>
+                <span class="lang-id">Siap Mencoba? <br>Cara Install di Chrome</span>
+                <span class="lang-en">Ready to Try? <br>How to Install on Chrome</span>
+            </h2>
+        </div>
+
+        <div class="timeline">
+            <div class="step reveal delay-100">
+                <div class="step-num">01</div>
+                <div class="step-content">
+                    <h3>Download Source</h3>
+                    <p>
+                        <span class="lang-id">Unduh <b>Source Code (ZIP)</b> dari repository GitHub kami.</span>
+                        <span class="lang-en">Download the <b>Source Code (ZIP)</b> from our GitHub repository.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="step reveal delay-200">
+                <div class="step-num">02</div>
+                <div class="step-content">
+                    <h3>Extract</h3>
+                    <p>
+                        <span class="lang-id">Ekstrak file ZIP tersebut ke folder baru.</span>
+                        <span class="lang-en">Extract the ZIP file to a new folder.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="step reveal delay-300">
+                <div class="step-num">03</div>
+                <div class="step-content">
+                    <h3>Developer Mode</h3>
+                    <p>
+                        <span class="lang-id">Buka <code>chrome://extensions</code> dan aktifkan <b>"Developer mode"</b>.</span>
+                        <span class="lang-en">Open <code>chrome://extensions</code> and enable <b>"Developer mode"</b>.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="step reveal delay-400">
+                <div class="step-num">04</div>
+                <div class="step-content">
+                    <h3>Load Unpacked</h3>
+                    <p>
+                        <span class="lang-id">Klik <b>"Load unpacked"</b> dan pilih folder hasil ekstrak tadi. Selesai! 🎉</span>
+                        <span class="lang-en">Click <b>"Load unpacked"</b> and select the extracted folder. Done! 🎉</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-final reveal delay-500">
+            <button class="btn-primary" onclick="window.location.href='https://github.com/wafarifki/DevTools/archive/refs/tags/v1.0.0.zip'">
+                <span class="lang-id">Download ZIP (v1.0)</span>
+                <span class="lang-en">Download ZIP (v1.0)</span>
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="col">
+                <div class="logo">
+                     <span>DevTools</span>
+                </div>
+                <p style="margin-top: 10px; color: var(--text-muted);">
+                    <span class="lang-id">Dibuat dengan ❤️ oleh Wafa Rifqi Anafin.</span>
+                    <span class="lang-en">Made with ❤️ by Wafa Rifqi Anafin.</span>
+                </p>
+            </div>
+            <div class="col">
+                <h4 class="lang-id">Tautan</h4><h4 class="lang-en">Links</h4>
+                <a href="https://github.com/wafarifki/DevTools">Github</a>
+                <a href="https://github.com/wafarifki/DevTools/issues/new/choose">Report Bug</a>
+            </div>
+            <div class="col">
+                <h4 class="lang-id">Legal</h4><h4 class="lang-en">Legal</h4>
+                <a href="#" id="btn-privacy">Privacy Policy</a>
+                <a href="#" id="btn-terms">Terms of Service</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy;2026 DevTools. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="legal-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="content-privacy" class="modal-body hidden">
+                <h2>Privacy Policy</h2>
+                <div class="legal-text">
+                    <p class="lang-id"><strong>Efektif per: 1 Januari 2026</strong></p>
+                    <p class="lang-en"><strong>Effective date: January 1, 2026</strong></p>
+                    
+                    <h3 class="lang-id">1. Pengumpulan Data</h3>
+                    <h3 class="lang-en">1. Data Collection</h3>
+                    <p class="lang-id">DevTools memprioritaskan privasi Anda. Kami <strong>tidak mengumpulkan, menyimpan, atau mengirimkan</strong> data pribadi apapun ke server eksternal. Semua proses (Inspeksi, Screenshot, dll) berjalan 100% secara lokal di browser Anda.</p>
+                    <p class="lang-en">DevTools prioritizes your privacy. We <strong>do not collect, store, or transmit</strong> any personal data to external servers. All processes (Inspection, Screenshot, etc.) run 100% locally in your browser.</p>
+
+                    <h3 class="lang-id">2. Izin Browser</h3>
+                    <h3 class="lang-en">2. Browser Permissions</h3>
+                    <p class="lang-id">Ekstensi ini membutuhkan izin tertentu (seperti <code>activeTab</code>, <code>scripting</code>) hanya untuk menjalankan fungsinya. Izin ini tidak digunakan untuk melacak aktivitas browsing Anda.</p>
+                    <p class="lang-en">This extension requires specific permissions (like <code>activeTab</code>, <code>scripting</code>) solely to perform its functions. These permissions are not used to track your browsing activity.</p>
+                </div>
+            </div>
+
+            <div id="content-terms" class="modal-body hidden">
+                <h2>Terms of Service</h2>
+                <div class="legal-text">
+                    <p class="lang-id">Dengan menggunakan ekstensi DevTools, Anda menyetujui ketentuan berikut:</p>
+                    <p class="lang-en">By using the DevTools extension, you agree to the following terms:</p>
+
+                    <h3 class="lang-id">1. Penggunaan Lisensi</h3>
+                    <h3 class="lang-en">1. License Use</h3>
+                    <p class="lang-id">DevTools adalah perangkat lunak gratis. Anda bebas menggunakannya untuk keperluan pribadi maupun komersial.</p>
+                    <p class="lang-en">DevTools is free software. You are free to use it for both personal and commercial purposes.</p>
+
+                    <h3 class="lang-id">2. Penafian (Disclaimer)</h3>
+                    <h3 class="lang-en">2. Disclaimer</h3>
+                    <p class="lang-id">Perangkat lunak ini disediakan "sebagaimana adanya" tanpa jaminan apapun. Penulis tidak bertanggung jawab atas kerusakan atau kehilangan data yang mungkin timbul dari penggunaan alat ini.</p>
+                    <p class="lang-en">This software is provided "as is" without any warranty. The author is not liable for any damages or data loss that may arise from using this tool.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
